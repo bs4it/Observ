@@ -1,5 +1,5 @@
 #!/bin/bash
-#teste
+
 source config.env
 # Variáveis
 EDGE_CONTAINER="portainer_edge_agent"
@@ -7,7 +7,7 @@ PORTAINER_AGENT_IMAGE="portainer/agent"
 EDGE_ID="${EDGE_ID:-}"
 EDGE_KEY="${EDGE_KEY:-}"
 EDGE_INSECURE_POLL="${EDGE_INSECURE_POLL:-1}"
-PORTAINER_AGENT_DATA_DIR="${PORTAINER_AGENT_DATA_DIR:-/opt/portainer/portainer_agent_data}"
+PORTAINER_AGENT_DATA_DIR="${PORTAINER_AGENT_DATA_DIR:-/opt/bs4it/portainer/portainer_agent_data}"
 export ENABLE_CLEANUP="true"
 #ENABLE_CLEANUP="true" - Caso queira a Limpeza de volumes e imagens não utilizadas, descomente esse comando. Anteção isso afeta todos os clientes, analise fria e calmamente antes de utilizar.
 #               "false" - Caso nao queira limpeza    
