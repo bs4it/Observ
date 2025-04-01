@@ -13,7 +13,7 @@ export ENABLE_CLEANUP="true"
 #               "false" - Caso nao queira limpeza    
 
 # Obtem a versão a ser instalada no GitHub
-LATEST_VERSION_RAW=$(curl -s https://api.github.com/repos/Chri-csf/test/contents/portainer_edge_version?ref=main)
+LATEST_VERSION_RAW=$(curl -s https://api.github.com/repos/bs4it/Observ/blob/main/portainer_edge_version?ref=main)
 if [ $? -ne 0 ]; then
   echo "Erro ao obter a versão do GitHub."
   exit 1
